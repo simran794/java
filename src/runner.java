@@ -76,5 +76,15 @@ public class runner {
         stack.print();
         */
         System.out.println("test");
+        linkedlist list = new linkedlist();
+        list.add(3);
+        list.add(8);
+        list.add(3);
+        list.add(5);
+        list.add(3);
+        list.add(5);
+        list.add(9);
+        list.add(9);
+        list.print();
     }
 }
