@@ -92,8 +92,6 @@ public class linkedlist {
     }
 
     //reverse the linked list
-
-
     public void createCircle()
     {
         Node h = head;
@@ -102,7 +100,6 @@ public class linkedlist {
         Node temp = h;
         temp =temp.next.next;
         temp.next = h;
-
     }
 
     //remove duplicates from the list
