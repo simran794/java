@@ -1,9 +1,9 @@
-/*
+
 import java.util.ArrayList;
 
 public class palidrom_125 {
-    public static void main(String[] args)
-    {
+    
+     public boolean isSentencePalindrome(){   
         String s = "race a car";
         s = s.replaceAll("[^a-zA-Z0-9]", "");
         s = s.toLowerCase();
@@ -20,8 +20,6 @@ public class palidrom_125 {
         }
 
         boolean result;
-        result = palindrome.equals(original);
-        System.out.println(result);
+
     }
 }
-*/
