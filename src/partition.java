@@ -1,7 +1,8 @@
-/*
- public void partition(int x)
+
+public class partition{
+    public void partitionList(int x) // you should return the head node of the new list, also pass in the list as a parameter
     {
-        Node runner = head;
+        Node runner = head;   // head of what? if you pass in the list you can use the head of that :) 
         Node small_head = null;
         Node small = null;
         Node large_head = null;
@@ -9,7 +10,6 @@
 
         while(runner.next != null)
         {
-
             if(runner.data < x)
             {
                 if(small_head == null)
@@ -51,6 +51,6 @@
         }
         large.next = null;
         small.next = large_head;
-    }
+    }    
 }
- */
+ 
