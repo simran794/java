@@ -128,15 +128,12 @@ public class linkedlist {
         }
         if(set.contains(runner.data))
         {
-            //System.out.println(runner.data);
-            //System.out.println(h.data);
             h.next = null;
-            //System.out.println("h.data");
-            //System.out.println(h.data);
         }
     }
     
     // addition of linked_list
+
     public void addition(linkedlist a, linkedlist b)
     {
         Node h = a.head;
@@ -154,4 +151,5 @@ public class linkedlist {
             h1 = h1.next;
         }
     }
+
 }

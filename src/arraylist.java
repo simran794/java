@@ -8,7 +8,7 @@ public class arraylist {
     public void add(int x)
     {
         //check for size before doing add
-        if(index = 0)
+        if(index == 0)
         {
             arr[index] = x;
         }
