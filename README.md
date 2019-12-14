@@ -29,4 +29,6 @@ git pull : pulls the branch you are on from online and merges it with your stuff
 
 git reset --hard master : changes your branch to be axactly like your local master
 
+git reset --hard origin/branch-name
+
 
