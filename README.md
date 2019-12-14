@@ -31,4 +31,7 @@ git reset --hard master : changes your branch to be axactly like your local mast
 
 git reset --hard origin/branch-name
 
+git push --set-upstream origin haider/test
+
+
 
