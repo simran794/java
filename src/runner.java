@@ -1,44 +1,26 @@
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedList;
+import java.util.linkedlist;
+import java.util.nodesAddition;
+
 
 public class runner {
     public static void main (String [] args)
     {
-        /*
-        linkedlist list = new linkedlist();
-        list.add(3);
-        list.add(8);
-        list.add(3);
-        list.add(5);
-        list.add(3);
-        list.add(5);
-        list.add(9);
-        list.add(9);
-        list.print();
-        //list.redup();
-       // list.print();
+        linkedlist listA = new linkedlist();
+        linkedlist listB = new linkedlist();
+        linkedlist listC = new linkedlist();
 
-        //list.createCircle();
-       // System.out.println(list.loopDetection());
+        listA.add(3);
+        listA.add(8);
+        listA.add(3);
+        
+        listB.add(5);
+        listB.add(3);
+        listB.add(5);
+        
+        listC.addition(listA, listB);
 
-        sortStack stack = new sortStack(5);
-        stack.push(15);
-        stack.push(3);
-        stack.print();
-        stack.pop();
-        stack.print();
-        */
-        System.out.println("testing now");
-        linkedlist list = new linkedlist();
-        list.add(3);
-        list.add(8);
-        list.add(3);
-        list.add(5);
-        list.add(3);
-        list.add(5);
-        list.add(9);
-        list.add(9);
-        list.print();
+        listC.print();
     }
 }
