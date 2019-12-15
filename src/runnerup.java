@@ -1,4 +1,5 @@
 import java.util.linkedlist1;
+import java.util.intersection;
 
 public class runnerup
 {
@@ -22,7 +23,9 @@ public class runnerup
         b.add(1);
 
         a.print();
-        System.out.println("Length = "+ a.length());
         b.print();
+
+        intersection result = new intersection();
+        result.intersect(a,b);
     }
 }
