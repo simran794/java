@@ -6,14 +6,14 @@ public class runner {
         henlo5 o = new henlo5();
         //System.out.println(n.isEmpty());
         n.push(1);
-        n.push(2);
+        n.push(5);
         n.push(3);
-        n.push(4);
+        n.push(8);
         n.print();
         //System.out.println(n.peek());
         o.sort(n);
         // n.remove();
-        o.print();
+        //o.print();
         // System.out.println(n.mini());
         //n.print();
         //System.out.println(n.peek());

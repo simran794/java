@@ -13,24 +13,12 @@ public class henlo5 {
 	}
 	
 	private node head;
-	private int min ;
-	private int length = 0; 
-	
+
 	public void push(int x) {
-		length = length + 1;
+		
 		node temp = new node(x);
 		temp.next=head;
 		head=temp;
-
-		if(length == 1) {
-			min = head.data;
-		}
-		else {
-			if(min > x) {
-				min = x;
-				//System.out.println("minimum hits "+ min);
-			}
-		}
 	}
 	
 	public void print() {
@@ -40,8 +28,7 @@ public class henlo5 {
 			h1 = h1.next;
 		}
 		System.out.println(h1.data);
-//		System.out.println("size is "+ length);
-//		System.out.println("minimum is " + min);
+
 	}
 	
 	public boolean isEmpty() {
@@ -49,10 +36,7 @@ public class henlo5 {
 			System.out.println("empty");
 			return true;
 		}
-		else {
-			System.out.println("not empty");
-			return false;
-		}
+        return false;
 	}
 	
 	public int pop() {
@@ -60,39 +44,26 @@ public class henlo5 {
         head = head.next;
         return temp;
 	}
-    
-    public int mini(){
-        node h1 = head;
-        while(h1.next!=null){
-            if(min > h1.data){
-                min = h1.data;
-            }
-            h1 = h1.next;
-        }
-        return min;
-    }
-
-    //public void balance(int x);
-    
-    public int peek(henlo5 r){
+     
+    public int peek(){
         return head.data;
     }
 
     public void sort(henlo5 r){
         henlo5 newstack = new henlo5();
-        henlo5 tempStack = new henlo5();
+        
         while(!r.isEmpty()){
-            int min = r.mini();
-            if(r.pop() == min){
-                newstack.push(r.pop());
+            int x = r.pop();
+            if(newstack.isEmpty()){
+                newstack.push(x);
             }
             else{
-                tempStack.push(r.pop());
+                while(!newstack.isEmpty() && x > newstack.peek()){
+                    r.push(newstack.pop());
+                }
+                newstack.push(x);
             }
         }
-        r = tempStack;
-        sort(r);
-        r.print();
         newstack.print();
     }
 	
